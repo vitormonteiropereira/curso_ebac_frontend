@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário</h1>
+        <h2>Garanta que o valor do campo B seja maior que o valor do campo A:</h2>
+        <form id="form-valores">
+            
+            <p class="campoA">Campo A</p>
+            <input type="number" id="numero1" required placeholder="Valor do campo A" />
+            <p class="campoB">Campo B</p>
+            <input type="number" id="numero2" required placeholder="Valor do campo B" />
+            
+            <button id="btn-depositar" type="submit" >Enviar</button>
+            <p class="error-message">
+                O valor do campo B precisa ser maior que o valor do campo A.
+            </p>
+        </form>
+        <p class="success-message">
+            Enviado com sucesso. Os valores foram inseridos corretamente!
+        </p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
